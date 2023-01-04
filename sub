@@ -1,0 +1,14 @@
+#!/bin/bash
+#SBATCH --job-name=sub
+#SBATCH --output=sub.out
+#SBATCH --error=sub.err
+#SBATCH -C knl
+#SBATCH --partition=regular
+#SBATCH --ntasks-per-node=1
+#SBATCH --nodes=1
+#SBATCH --time=48:00:00   
+
+
+export HDF5_USE_FILE_LOCKING=FALSE
+module load ncl
+ncl main.ncl
