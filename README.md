@@ -10,7 +10,7 @@ Tracking blocking regions based on Masato et al. (2013, Journal of Climate)
    .. i.e. the first longitude =/= the final longitude
 4. Data are continuous in time
 
-How to runs:
+How to run:
 =============
 
 ncl main.ncl
